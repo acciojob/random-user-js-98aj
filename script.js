@@ -9,7 +9,7 @@ fetch("https://randomuser.me/api/").then((resp)=> resp.json()).then((data)=>{
 
             let realInfo = document.querySelector('p');
 
-            let btn = document.querySelectorAll('.data-attr');
+            let btn = document.querySelectorAll('[data-attr');
 
             btn[0].addEventListener('click', ()=>{
                 realInfo.innerHTML = `${data.results[0].dob.age}`
